@@ -38,6 +38,6 @@ public class ValidationExceptionHandler {
     public ResponseEntity<?> notValid(HttpMessageNotReadableException ex, HttpServletRequest request) {
 
         // Return the map with validation errors and a BAD_REQUEST status
-        return new ResponseEntity<>("Error ", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>("Error Occured", HttpStatus.BAD_REQUEST);
     }
 }
