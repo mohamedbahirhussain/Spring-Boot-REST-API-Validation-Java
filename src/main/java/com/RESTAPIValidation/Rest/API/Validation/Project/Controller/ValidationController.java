@@ -15,8 +15,5 @@ public class ValidationController {
         return "Welcome user!";
     }
 
-    @PostMapping("/signup")
-    public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signupRequest){
-        return new ResponseEntity<>("User registered Successfully!", HttpStatus.OK);
-    }
+
 }
